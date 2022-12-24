@@ -1,5 +1,5 @@
 <?php
-$nama = "Pangki"; 
+$nama = "Awan"; 
 /*
 echo $nama;
 echo "<br/>";
@@ -40,13 +40,44 @@ do {
     $i++;
 } while ($i < $no)
 */
-
+/*
 $data = array('avanza', 'lamborgini', 'tesla', 'xenia', 'xpander', 'rubicon');
 
-echo $data[5];
+$i = 0;
+while ($i < count($data)) {
+    echo $data[$i]."<br>";
+    $i++;
+}
+
+//echo $data[5];
 /*
 foreach($data as $value) {
     echo $value.<br>;
 }
-*/s
-?>
+*/
+
+// percabangan
+/*
+if ($nama == "Pangki") {
+echo $nama." adalah orang bintan";
+} else if($nama == "Awan"){
+    echo $nama." Barasal dari jawa barat";
+} 
+    else {echo $nama." Darimana tuh?  ";
+    }
+ */
+
+ switch ($nama) {
+    case "Pangki":
+    $pesan = $nama." adalah orang bintan"; 
+    break;
+    case "Awan":
+    $pesan = $nama." Barasal dari jawa barat";
+    break;
+    default:
+     $pesan = $nama." Darimana tuh?";
+    
+}
+ 
+
+?> 
